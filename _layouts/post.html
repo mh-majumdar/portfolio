@@ -1,0 +1,166 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% if page.thumbnail %}
+    <meta property="og:image" content="{{ page.thumbnail | absolute_url }}">
+    <meta name="twitter:image" content="{{ page.thumbnail | absolute_url }}">
+    {% else %}
+    <meta property="og:image" content="{{ site.url }}/assets/images/default-logo.jpg">
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/default-logo.jpg">
+    {% endif %}
+
+    <!-- Essential Tags -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    {% if page.css %}
+    <link rel="stylesheet" href="{{ page.css }}">
+    {% endif %}
+
+
+
+
+
+
+
+    <style>
+        .post-hero {
+            min-height: 60vh;
+            background-color: rgb(19, 50, 103);
+            position: relative;
+            padding-top: 80px;
+            padding-bottom: 40px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .post-hero h1 {
+            font-size: 2.5rem;
+        }
+
+        @media (max-width: 576px) {
+            .post-hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .post-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .tag-pill {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 4px 12px;
+            margin: 4px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+        }
+
+        .share-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+
+        .share-icons a:hover {
+            color: #ccc;
+        }
+
+        .content-wrapper {
+            padding: 2rem 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .content-wrapper {
+                padding: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Post Hero Section -->
+    <section class="post-hero">
+        <div class="overlay"></div>
+        <div class="container text-white">
+            <h1 class="fw-bold">{{ page.title }}</h1>
+            <p class="text-light small mt-2">{{ page.date | date: "%B %d, %Y" }}</p>
+
+            {% if page.tags %}
+            <div class="mt-3">
+                {% for tag in page.tags %}
+                <a href="/tags/#{{ tag | slugify }}" class="tag-pill">#{{ tag }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <!-- Share Icons -->
+            <div class="share-icons mt-4">
+                {% assign full_url = site.url | append: page.url %}
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url }}" target="_blank"
+                    title="Share on Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/intent/tweet?url={{ full_url }}&text={{ page.title }}" target="_blank"
+                    title="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:?subject={{ page.title }}&body=Check out this post: {{ full_url }}"
+                    title="Share via Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+        </div>
+
+
+        </div>
+    </section>
+
+    <!-- Post Content Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-md-10 col-sm-11 col-12">
+                    <div class="bg-white p-4 rounded shadow-sm content-wrapper">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
