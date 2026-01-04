@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mehedi Hasan - Creative Technologist & Software Developer. Building modern web applications with clean code and best practices.">
+    <meta name="author" content="Mehedi Hasan">
+    <title>Mehedi Hasan | Software Artist</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#home" class="navbar-brand">Mehedi Hasan .</a>
+
+            <button class="navbar-toggle" id="navbarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="#about" class="navbar-link">About</a></li>
+                <li><a href="#skills" class="navbar-link">Skills</a></li>
+                <li><a href="#venture" class="navbar-link">Venture</a></li>
+                <li><a href="#projects" class="navbar-link">Works</a></li>
+                <li><a href="#education" class="navbar-link">Education</a></li>
+                <li><a href="#contact" class="navbar-link">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <img src="Mehedi Hasan.jpeg" alt="Mehedi Hasan" class="hero-image">
+            <h1 class="hero-title">Software Developer.</h1>
+            <p class="hero-subtitle">Crafting elegant digital experiences through code, design, and storytelling.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i> View Work
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-paper-plane"></i> Let's Talk
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Who I Am</h2>
+            <p class="section-subtitle">Code, Capture, Create</p>
+
+            <div class="grid-2">
+                <!-- Bio Card -->
+                <div class="card">
+                    <h3 style="margin-bottom: 1.5rem;">The Backstory</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                        I am a Software Developer with strong expertise in Python, Flask, Django, and MySQL,
+                        experienced in developing real-world projects that transform traditional processes into digital
+                        solutions. Solid understanding of Object-Oriented Programming, Data Structures & Algorithms, and
+                        RESTful application design. Skilled in version control and containerization, with a continuous
+                        drive to learn and grow.
+                    </p>
+                    <p style="color: var(--text-muted);">
+                        Beyond lines of code, I am passionate about writing poetry and contemporary literature. I
+                        believe in the intersection of technology and art—where logic meets creativity to build
+                        something truly meaningful.
+                    </p>
+                </div>
+
+                <!-- What I Do / Services -->
+                <div class="card">
+                    <h3 style="margin-bottom: 2rem;">What I Do</h3>
+                    <!-- Using grid-3 for icons inside the card -->
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                        <div style="text-align: center;">
+                            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Dev</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-dark);">Backend</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Write</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-dark);">Storytelling</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Create</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-dark);">Innovation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Expertise</h2>
+            <p class="section-subtitle">My Technical Arsenal</p>
+
+            <div class="grid-2">
+
+                <!-- Tech Stack -->
+                <div class="card">
+                    <h3 style="margin-bottom: 2rem;">Tech Stack</h3>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <span
+                            style="color: var(--primary); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">Languages</span>
+                        <div style="color: var(--text-muted);">C, C++, Python</div>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <span
+                            style="color: var(--primary); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">Frontend</span>
+                        <div style="color: var(--text-muted);">HTML5, CSS3, Tailwind, Bootstrap</div>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <span
+                            style="color: var(--primary); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">Backend</span>
+                        <div style="color: var(--text-muted);">Django, Flask</div>
+                    </div>
+
+                    <div>
+                        <span
+                            style="color: var(--primary); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">Data</span>
+                        <div style="color: var(--text-muted);">PostgreSQL, MySQL, SQLAlchemy</div>
+                    </div>
+                </div>
+
+                <!-- Algorithms -->
+                <div class="card">
+                    <h3 style="margin-bottom: 2rem;">Computer Science</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">Data Structures</span>
+                        <span class="tag">System Design</span>
+                        <span class="tag">Object-Oriented Programming</span>
+                        <span class="tag">Sorting & Searching</span>
+
+                        <span class="tag">Trees & BST</span>
+                        <span class="tag">Hash Tables</span>
+                        <span class="tag">Operating Systems</span>
+                        <span class="tag">Networking</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding IshQool Section (Featured Venture) -->
+    <section id="venture"
+        style="background: linear-gradient(180deg, var(--bg-body) 0%, rgba(91, 108, 249, 0.05) 50%, var(--bg-body) 100%);">
+        <div class="container">
+            <h2 class="section-title">Current Venture</h2>
+            <p class="section-subtitle">Empowering the Next Generation</p>
+
+            <div class="card"
+                style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2rem; padding: 3rem; border: 1px solid var(--primary-glow);">
+                <div
+                    style="width: 150px; height: 150px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; padding: 1rem; box-shadow: 0 0 30px rgba(255,255,255,0.1);">
+                    <img src="Coding IshQool.png" alt="Coding IshQool Logo"
+                        style="width: 100%; height: auto; object-fit: contain;">
+                </div>
+
+                <div style="max-width: 700px;">
+                    <h3
+                        style="font-size: 2.5rem; margin-bottom: 0.5rem; background: linear-gradient(to right, #fff, var(--primary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        Coding IshQool</h3>
+                    <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--primary);">Founder & Programming
+                        Instructor</p>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
+                        EdTech platform for Class 6-12 students. Mastering Programming, IoT, Robotics, & Digital Skills
+                        to build the future.
+                    </p>
+
+                    <a href="http://www.coding-ishqool.com" target="_blank" class="btn btn-primary"
+                        style="font-size: 1.1rem; padding: 1rem 2.5rem;">
+                        Visit Coding IshQool <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Selected Work</h2>
+            <p class="section-subtitle">Ideas into Reality</p>
+
+            <div class="grid-2">
+                <!-- Project 1 -->
+                <div class="card project-card">
+                    <div class="project-image">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 style="margin-bottom: 0.5rem;">NSTU Transit</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            NSTU Transit is a web-based bus management system designed specifically for Noakhali Science
+                            and Technology University (NSTU).
+                        </p>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="https://github.com/mh-majumdar/university-bus-allocation-system" target="_blank"
+                                style="font-size: 0.9rem; font-weight: 600; color: var(--primary);">View Project
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card project-card">
+                    <div class="project-image">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 style="margin-bottom: 0.5rem;">Energy Meter Management System</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            A system built with Flask, designed to help users
+                            monitor electricity consumption, manage bills, process payments, and submit complaints
+                            through an intuitive web interface.
+                        </p>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="https://github.com/mh-majumdar/energy-meter-management-system" target="_blank"
+                                style="font-size: 0.9rem; font-weight: 600; color: var(--primary);">View Project
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card project-card">
+                    <div class="project-image">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 style="margin-bottom: 0.5rem;">CHD Dataset Analysis</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            Data analysis project on Coronary Heart Disease dataset using Python data science stack.
+                        </p>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" style="font-size: 0.9rem; font-weight: 600; color: var(--primary);">View Project
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Placeholder for balance) -->
+                <div class="card project-card">
+                    <div class="project-image">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 style="margin-bottom: 0.5rem;">Chat Log Summarizer</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            Chat Log Summarizer is a web application that transforms chat conversation logs into
+                            intelligent summaries using advanced AI analysis.
+                        </p>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="https://github.com/mh-majumdar/AI-Chat-Log-Summarizer" target="_blank"
+                                style="font-size: 0.9rem; font-weight: 600; color: var(--primary);">View Project
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">The Journey</h2>
+            <p class="section-subtitle">Academic Chronology</p>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <!-- Edu Item 1 -->
+                <div class="card" style="margin-bottom: 1.5rem; display: flex; gap: 1.5rem; align-items: start;">
+                    <div style="font-size: 2.5rem; color: var(--text-dark); opacity: 0.5;">01</div>
+                    <div>
+                        <h3 style="margin-bottom: 0.25rem; font-size: 1.4rem;">Noakhali Science & Technology University
+                        </h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">B.Sc. Engg. in
+                            Information
+                            & Communication Engineering</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            <i class="far fa-calendar" style="margin-right: 0.5rem;"></i> Feb 2020 - Feb 2024
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Edu Item 2 -->
+                <div class="card" style="display: flex; gap: 1.5rem; align-items: start;">
+                    <div style="font-size: 2.5rem; color: var(--text-dark); opacity: 0.5;">02</div>
+                    <div>
+                        <h3 style="margin-bottom: 0.25rem; font-size: 1.4rem;">Comilla Victoria Govt. College</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Higher Secondary
+                            Certificate (Science)</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            <i class="far fa-calendar" style="margin-right: 0.5rem;"></i> Apr 2017 - Apr 2019
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Leadership Section -->
+    <section id="leadership">
+        <div class="container">
+            <h2 class="section-title">Leadership & Activities</h2>
+            <p class="section-subtitle">Community Impact</p>
+
+            <div class="grid-2">
+                <!-- Activity 1 -->
+                <div class="card" style="border-left: 4px solid var(--primary);">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <h3 style="font-size: 1.5rem;">NSTU Photography Club</h3>
+                        <span class="tag"
+                            style="background: rgba(91, 108, 249, 0.2); color: var(--primary); border: none;">Former
+                            President</span>
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 0.5rem;">
+                        <i class="far fa-calendar-alt" style="margin-right: 0.5rem;"></i> Sep 2024 - Aug 2025
+                    </p>
+                    <p style="color: var(--text-dark); font-size: 0.9rem;">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Noakhali Science &
+                        Technology University
+
+                    </p>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="card" style="border-left: 4px solid var(--accent);">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <h3 style="font-size: 1.5rem;">ICE Programming Club</h3>
+                        <span class="tag"
+                            style="background:  rgba(91, 108, 249, 0.2); color: var(--accent); border: none;">Former
+                            General
+                            Secretary</span>
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 0.5rem;">
+                        <i class="far fa-calendar-alt" style="margin-right: 0.5rem;"></i> Mar 2024 - Aug 2025
+                    </p>
+                    <p style="color: var(--text-dark); font-size: 0.9rem;">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Noakhali Science &
+                        Technology
+                        University
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding-bottom: 6rem;">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Start a Conversation</p>
+
+            <div class="card" style="max-width: 500px; margin: 0 auto; padding: 3rem;">
+                <p style="font-size: 1.25rem; margin-bottom: 2rem; color: var(--text-muted);">
+                    Feel free to reach out for collaborations or just a friendly chat.
+                </p>
+
+                <a href="mailto:hasanmehedi.contact@gmail.com" class="btn btn-primary" style="margin-bottom: 2.5rem;">
+                    Say Hello
+                </a>
+
+                <div style="display: flex; justify-content: center; gap: 1.5rem;">
+                    <a href="mailto:hasanmehedi.contact@gmail.com" target="_blank"
+                        style="font-size: 1.5rem; color: #6c757d; text-decoration: none; transition: 0.3s;">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                    <a href="https://github.com/mh-majumdar" target="_blank"
+                        style="font-size: 1.5rem; color: var(--text-muted); transition: 0.3s;">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/mh-majumdar" target="_blank"
+                        style="font-size: 1.5rem; color: var(--text-muted); transition: 0.3s;">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/mh_majumdar" target="_blank"
+                        style="font-size: 1.5rem; color: var(--text-muted); transition: 0.3s;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mehedi Hasan. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+
+        // Mobile Menu Toggle
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+            const icon = navbarToggle.querySelector('i');
+            if (navbarMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.navbar-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navbarMenu.classList.remove('active');
+                const icon = navbarToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
